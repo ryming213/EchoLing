@@ -63,6 +63,13 @@
 
 ---
 
+## 🎨 APP页面
+<img width="1080" height="2400" alt="2" src="https://github.com/user-attachments/assets/7a313b62-1c7e-4ca2-a0cd-91c7216cb690" />
+
+
+
+---
+
 ## 🏗️ 技术栈
 
 | 维度 | 选型 | 理由 |
@@ -123,21 +130,6 @@ app/src/main/java/com/echoling/app/
 - 所有 UseCase `@Singleton + @Inject constructor`，无需 Module
 - TTS / AudioPlayer / VoskRecognizer 等副作用服务**跳过 UseCase 层**（与 `AudioPlayer` 同类）
 - `practice/*` 页面三 Tab 共享 `PracticeViewModel`，每个 Tab 独立 `PracticePage` 枚举隔离状态
-
----
-
-## 🎨 品牌色板（CLAUDE.md §11.2 锁定）
-
-| Token | 值 | 用途 |
-|---|---|---|
-| Primary | `#7C3AED` (violet-600) | 主强调色，CTA 按钮 / icon tint |
-| OnPrimary | `#FFFFFF` | Primary 上文字 |
-| PrimaryContainer | `#DDD6FE` (violet-200) | Continue Learning 卡片背景 / 今日热力格 |
-| Secondary | `#8B5CF6` (violet-500) | 次级强调 |
-| Tertiary | `#6D28D9` (violet-700) | accent bar / 深紫装饰 |
-| InversePrimary | `#A78BFA` (violet-400) | 深色主题主色 / 装饰紫 |
-
-**反例**：`A78BFA` 不适合做 CTA 按钮（太浅不像紫色），仅用于装饰 / 品牌栏 / 弱对比。
 
 ---
 
