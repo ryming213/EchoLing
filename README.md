@@ -1,6 +1,6 @@
 # Echo Ling · 听言英语
 
-> 一款面向国内英语学习者的 Android 原生应用，**完全离线运行**：本地 Vosk 语音识别 + 离线词典，无需任何 API key 或网络连接。
+> 一款面向国内英语学习者的 Android 原生应用，**完全离线运行**：本地语音识别，文字识别，跟读练习，包括泛听，精听和测试。同时增加离线词典，用于单词翻译和单词卡片的学习。无需任何 API key 或网络连接，仅需要用户自行导入自己喜欢的音频/视频/字幕进行学习。
 
 [![Release v1.1](https://img.shields.io/badge/release-v1.1-7C3AED)](https://github.com/ryming213/EchoLing/releases/tag/v1.1)
 [![Android](https://img.shields.io/badge/Android-26%2B-3DDC84)](#-开发环境)
@@ -13,23 +13,6 @@
 
 ## ✨ 功能概览
 
-### 📚 词汇 · 11 个分类，闪卡复习
-
-- 11 个预置词库（小学 / 初中 / 高中 / CET-4 / CET-6 / 雅思 / 托福 / 考研 / GRE / BEC / TEM-8），共 **~26000+ 词**
-- 闪卡复习：Y 轴 3D 翻转动画 + 正方形卡片，**逐张记录「认识 / 不认识」进度**
-- **进程被杀 / 切 tab 后进度不丢**（Room v5 `recite_progress` 表持久化）
-- 闪卡正面 / 反面 / 生词本每个单词配 **TTS 喇叭按钮**（内置 + 多引擎 fallback）
-- 例句展示（英文 + 中文翻译对照）
-
-### 🎬 自动字幕生成 · 完全离线
-
-- 导入音视频（`.mp3` / `.mp4` / `.mkv`）时不传字幕，可点 **「立即转字幕」** 或 **「稍后转字幕」**
-- 全本地管线：`ffmpeg-kit-min-gpl 6.0-2` 抽 16 kHz Mono WAV → `Vosk small` 离线 STT → `SrtSynthesizer` 纯 Kotlin 拼 `.srt` → 写入 `filesDir/courses/<id>.srt`
-- 生成结果与手传字幕共用 `subtitleUri` 字段，**零下游代码改动** —— 直接进跟读练习
-- 课程列表 chip 实时显示进度：`字幕识别中 N%` / `字幕识别失败，点击重试` / READY 后 chip 消失
-- 进 Practice 时若字幕还在识别：显示 `字幕正在识别中… 请稍后回来`（48dp 沙漏 + 返回按钮），不报错
-- **`setRequiresStorageNotLow`** —— worker 会在低存储时自动 defer
-
 ### 🎯 跟读练习 · 三个 Tab 全场景
 
 | Tab | 功能 |
@@ -41,6 +24,22 @@
 - 全局字幕锁英文（不显示中文，避免用户偷看绕过听力训练）
 - 单句播放状态隔离（`singleSubtitleIndex`/`isSinglePlayMode`，§12.36 race 修复完毕）
 - 长按单词翻译走**离线词典**（本地 JSON 资产，<1s 响应）
+  
+### 📚 词汇 · 11 个分类，闪卡复习
+
+- 11 个预置词库（小学 / 初中 / 高中 / CET-4 / CET-6 / 雅思 / 托福 / 考研 / GRE / BEC / TEM-8），共 **~26000+ 词**
+- 闪卡复习：Y 轴 3D 翻转动画 + 正方形卡片，**逐张记录「认识 / 不认识」进度**
+- 闪卡正面 / 反面 / 生词本为每个单词配备播放按键，中文翻译，音标。
+- 闪卡正门 / 反面 / 包含该单词的英文例句和中文翻译对照
+
+### 🎬 自动字幕生成 · 完全离线
+
+- 导入音视频（`.mp3` / `.mp4` / `.mkv`）时不传字幕，可点 **「立即转字幕」** 或 **「稍后转字幕」**
+- 全本地管线：`ffmpeg-kit-min-gpl 6.0-2` 抽 16 kHz Mono WAV → `Vosk small` 离线 STT → `SrtSynthesizer` 纯 Kotlin 拼 `.srt` → 写入 `filesDir/courses/<id>.srt`
+- 生成结果与手传字幕共用 `subtitleUri` 字段，**零下游代码改动** —— 直接进跟读练习
+- 课程列表 chip 实时显示进度：`字幕识别中 N%` / `字幕识别失败，点击重试` / READY 后 chip 消失
+- 进 Practice 时若字幕还在识别：显示 `字幕正在识别中… 请稍后回来`（48dp 沙漏 + 返回按钮），不报错
+- **`setRequiresStorageNotLow`** —— worker 会在低存储时自动 defer
 
 ### 🎬 我的练习 · 本地音视频 + 字幕导入
 
@@ -64,7 +63,7 @@
 ---
 
 ## 🎨 APP页面
-<img width="1080" height="2400" alt="2" src="https://github.com/user-attachments/assets/7a313b62-1c7e-4ca2-a0cd-91c7216cb690" />
+
 
 
 
