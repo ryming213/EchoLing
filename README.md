@@ -14,19 +14,23 @@
 ## 📱 APP 界面预览
 
 <div align="center">
-  <div style="overflow-x: auto; white-space: nowrap; padding: 8px 0;">
-    <img src="docs/app-screenshots/1.jpg"  width="200" alt="1. 跟读练习 · 泛听" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/2.jpg"  width="200" alt="2. 长按单词 · 翻译 + 保存到生词本" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/3.jpg"  width="200" alt="3. 精听模式 · 按住跟读" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/4.jpg"  width="200" alt="4. 测试模式 · STT 词级匹配" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/5.jpg"  width="200" alt="5. 单词本" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/6.jpg"  width="200" alt="6. 词库分类 · 11 个预置词库" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/7.jpg"  width="200" alt="7. 闪卡正面" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/8.jpg"  width="200" alt="8. 闪卡背面 · 音标 + 翻译" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/9.jpg"  width="200" alt="9. 学习统计 · 7 天 + 月度热力图" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/10.jpg" width="200" alt="10. 首页 · Continue Learning Card" style="display: inline-block; margin-right: 8px;"/>
-    <img src="docs/app-screenshots/11.jpg" width="200" alt="11. 跟读练习 · 暂停状态" style="display: inline-block;"/>
-  </div>
+
+<table>
+  <tr>
+    <td><img src="docs/app-screenshots/1.jpg"  width="200" alt="1. 跟读练习 · 泛听"/></td>
+    <td><img src="docs/app-screenshots/2.jpg"  width="200" alt="2. 长按单词 · 翻译 + 保存到生词本"/></td>
+    <td><img src="docs/app-screenshots/3.jpg"  width="200" alt="3. 精听模式 · 按住跟读"/></td>
+    <td><img src="docs/app-screenshots/4.jpg"  width="200" alt="4. 测试模式 · STT 词级匹配"/></td>
+    <td><img src="docs/app-screenshots/5.jpg"  width="200" alt="5. 单词本"/></td>
+    <td><img src="docs/app-screenshots/6.jpg"  width="200" alt="6. 词库分类 · 11 个预置词库"/></td>
+    <td><img src="docs/app-screenshots/7.jpg"  width="200" alt="7. 闪卡正面"/></td>
+    <td><img src="docs/app-screenshots/8.jpg"  width="200" alt="8. 闪卡背面 · 音标 + 翻译"/></td>
+    <td><img src="docs/app-screenshots/9.jpg"  width="200" alt="9. 学习统计 · 7 天 + 月度热力图"/></td>
+    <td><img src="docs/app-screenshots/10.jpg" width="200" alt="10. 首页 · Continue Learning Card"/></td>
+    <td><img src="docs/app-screenshots/11.jpg" width="200" alt="11. 跟读练习 · 暂停状态"/></td>
+  </tr>
+</table>
+
 </div>
 
 ---
