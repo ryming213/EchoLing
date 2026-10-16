@@ -11,6 +11,36 @@
 
 ---
 
+## 📱 APP 界面预览
+
+<p align="center">
+  <img src="docs/app-screenshots/1.jpg"  width="200" alt="1. 跟读练习 · 泛听"/>
+  <img src="docs/app-screenshots/2.jpg"  width="200" alt="2. 长按单词 · 翻译 + 保存到生词本"/>
+</p>
+
+<p align="center">
+  <img src="docs/app-screenshots/3.jpg"  width="200" alt="3. 精听模式 · 按住跟读"/>
+  <img src="docs/app-screenshots/4.jpg"  width="200" alt="4. 测试模式 · STT 词级匹配"/>
+</p>
+
+<p align="center">
+  <img src="docs/app-screenshots/5.jpg"  width="200" alt="5. 单词本"/>
+  <img src="docs/app-screenshots/6.jpg"  width="200" alt="6. 词库分类 · 11 个预置词库"/>
+</p>
+
+<p align="center">
+  <img src="docs/app-screenshots/7.jpg"  width="200" alt="7. 闪卡正面"/>
+  <img src="docs/app-screenshots/8.jpg"  width="200" alt="8. 闪卡背面 · 音标 + 翻译"/>
+</p>
+
+<p align="center">
+  <img src="docs/app-screenshots/9.jpg"  width="200" alt="9. 学习统计 · 7 天 + 月度热力图"/>
+  <img src="docs/app-screenshots/10.jpg" width="200" alt="10. 首页 · Continue Learning Card"/>
+  <img src="docs/app-screenshots/11.jpg" width="200" alt="11. 跟读练习 · 暂停状态"/>
+</p>
+
+---
+
 ## ✨ 功能概览
 
 ### 🎯 跟读练习 · 三个 Tab 全场景
@@ -31,6 +61,22 @@
 - 闪卡复习：Y 轴 3D 翻转动画 + 正方形卡片，**逐张记录「认识 / 不认识」进度**
 - 闪卡正面 / 反面 / 生词本为每个单词配备播放按键，中文翻译，音标。
 - 闪卡正门 / 反面 / 包含该单词的英文例句和中文翻译对照
+
+### 🎬 自动字幕生成 · 完全离线
+
+- 导入音视频（`.mp3` / `.mp4` / `.mkv`）时不传字幕，可点 **「立即转字幕」** 或 **「稍后转字幕」**
+- 全本地管线：`ffmpeg-kit-min-gpl 6.0-2` 抽 16 kHz Mono WAV → `Vosk small` 离线 STT → `SrtSynthesizer` 纯 Kotlin 拼 `.srt` → 写入 `filesDir/courses/<id>.srt`
+- 生成结果与手传字幕共用 `subtitleUri` 字段，**零下游代码改动** —— 直接进跟读练习
+- 课程列表 chip 实时显示进度：`字幕识别中 N%` / `字幕识别失败，点击重试` / READY 后 chip 消失
+- 进 Practice 时若字幕还在识别：显示 `字幕正在识别中… 请稍后回来`（48dp 沙漏 + 返回按钮），不报错
+- **`setRequiresStorageNotLow`** —— worker 会在低存储时自动 defer
+
+### 📚 词汇 · 11 个分类，闪卡复习
+
+- 11 个预置词库（小学 / 初中 / 高中 / CET-4 / CET-6 / 雅思 / 托福 / 考研 / GRE / BEC / TEM-8），共 ~26000+ 词
+- 闪卡复习：Y 轴 3D 翻转动画 + 正方形卡片，逐张记录「认识 / 不认识」进度
+- 闪卡正面 / 反面 / 生词本为每个单词配备播放按键，中文翻译，音标。
+- 闪卡正面 / 反面 / 包含该单词的英文例句和中文翻译对照。
 
 ### 🎬 自动字幕生成 · 完全离线
 
@@ -62,12 +108,6 @@
 
 ---
 
-## 🎨 APP页面
-
-
-
-
----
 
 ## 🏗️ 技术栈
 
