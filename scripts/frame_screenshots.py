@@ -11,8 +11,8 @@ from pathlib import Path
 
 SRC_DIR = Path("docs/app-screenshots")
 
-MARGIN = 20            # padding around the screenshot (becomes the border zone)
-BORDER_W = 6           # thickness of the visible border line
+MARGIN = 32            # padding around the screenshot (becomes the border zone)
+BORDER_W = 8           # thickness of the visible border line
 BORDER_COLOR = (60, 60, 60)  # dark gray for clear visibility
 RADIUS = 50            # corner radius of the screenshot itself
 BG = (255, 255, 255)   # background color (white, matches GitHub README)
