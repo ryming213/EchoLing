@@ -15,34 +15,11 @@
 
 <div align="center">
 
-<table cellpadding="0" cellspacing="0" border="0">
-  <colgroup>
-    <col width="400">
-    <col width="400">
-    <col width="400">
-    <col width="400">
-    <col width="400">
-    <col width="400">
-    <col width="400">
-    <col width="400">
-    <col width="400">
-    <col width="400">
-    <col width="400">
-  </colgroup>
-  <tr>
-    <td width="400"><img src="docs/app-screenshots/1.jpg"  width="400" alt="1. 跟读练习 · 泛听"/></td>
-    <td width="400"><img src="docs/app-screenshots/2.jpg"  width="400" alt="2. 长按单词 · 翻译 + 保存到生词本"/></td>
-    <td width="400"><img src="docs/app-screenshots/3.jpg"  width="400" alt="3. 精听模式 · 按住跟读"/></td>
-    <td width="400"><img src="docs/app-screenshots/4.jpg"  width="400" alt="4. 测试模式 · STT 词级匹配"/></td>
-    <td width="400"><img src="docs/app-screenshots/5.jpg"  width="400" alt="5. 单词本"/></td>
-    <td width="400"><img src="docs/app-screenshots/6.jpg"  width="400" alt="6. 词库分类 · 11 个预置词库"/></td>
-    <td width="400"><img src="docs/app-screenshots/7.jpg"  width="400" alt="7. 闪卡正面"/></td>
-    <td width="400"><img src="docs/app-screenshots/8.jpg"  width="400" alt="8. 闪卡背面 · 音标 + 翻译"/></td>
-    <td width="400"><img src="docs/app-screenshots/9.jpg"  width="400" alt="9. 学习统计 · 7 天 + 月度热力图"/></td>
-    <td width="400"><img src="docs/app-screenshots/10.jpg" width="400" alt="10. 首页 · Continue Learning Card"/></td>
-    <td width="400"><img src="docs/app-screenshots/11.jpg" width="400" alt="11. 跟读练习 · 暂停状态"/></td>
-  </tr>
-</table>
+| | | | |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/app-screenshots/1.jpg"  width="280" alt="1. 跟读练习 · 泛听"/> | <img src="docs/app-screenshots/2.jpg"  width="280" alt="2. 长按单词 · 翻译 + 保存到生词本"/> | <img src="docs/app-screenshots/3.jpg"  width="280" alt="3. 精听模式 · 按住跟读"/> | <img src="docs/app-screenshots/4.jpg"  width="280" alt="4. 测试模式 · STT 词级匹配"/> |
+| <img src="docs/app-screenshots/5.jpg"  width="280" alt="5. 单词本"/> | <img src="docs/app-screenshots/6.jpg"  width="280" alt="6. 词库分类 · 11 个预置词库"/> | <img src="docs/app-screenshots/7.jpg"  width="280" alt="7. 闪卡正面"/> | <img src="docs/app-screenshots/8.jpg"  width="280" alt="8. 闪卡背面 · 音标 + 翻译"/> |
+| <img src="docs/app-screenshots/9.jpg"  width="280" alt="9. 学习统计 · 7 天 + 月度热力图"/> | <img src="docs/app-screenshots/10.jpg" width="280" alt="10. 首页 · Continue Learning Card"/> | <img src="docs/app-screenshots/11.jpg" width="280" alt="11. 跟读练习 · 暂停状态"/> | |
 
 </div>
 
@@ -80,10 +57,10 @@
 
 ### 📚 词汇 · 11 个分类，闪卡复习
 
-- 11 个预置词库（小学 / 初中 / 高中 / CET-4 / CET-6 / 雅思 / 托福 / 考研 / GRE / BEC / TEM-8），共 ~26000+ 词
-- 闪卡复习：Y 轴 3D 翻转动画 + 正方形卡片，逐张记录「认识 / 不认识」进度
+- 11 个预置词库（小学 / 初中 / 高中 / CET-4 / CET-6 / 雅思 / 托福 / 考研 / GRE / BEC / TEM-8），共 **~26000+ 词**
+- 闪卡复习：Y 轴 3D 翻转动画 + 正方形卡片，**逐张记录「认识 / 不认识」进度**
 - 闪卡正面 / 反面 / 生词本为每个单词配备播放按键，中文翻译，音标。
-- 闪卡正面 / 反面 / 包含该单词的英文例句和中文翻译对照。
+- 闪卡正门 / 反面 / 包含该单词的英文例句和中文翻译对照
 
 ### 🎬 自动字幕生成 · 完全离线
 
